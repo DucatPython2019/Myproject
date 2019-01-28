@@ -1,0 +1,13 @@
+<html>
+<body>
+{{msg}}
+<form action='/update_db/' method='post'>
+{%csrf_token%}
+Name:<input type='text' name='name' value='{{emp.name}}'><br><br>
+Sal:<input type='number' name='sal' value='{{emp.sal}}'><br><br>
+Email:<input type='email' name='email' value='{{emp.email}}'><br><br>
+<input type='hidden' name='id' value='{{emp.id}}'>
+<input type='submit' value='update'>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<body>
+<table cellpadding=10>
+<thead>
+<th>Name</th>
+<th>Sal</th>
+<th>Email</th>
+<th>Action</th>
+</thead>
+{% for emp in data%}
+<tr>
+		<td>
+		{{emp.name}}
+		</td>
+		<td>
+		{{emp.sal}}
+		</td>
+		<td>
+		{{emp.email}}
+		</td>
+		<td><a href='/edit?id={{emp.id}}'>Edit</a>|<a href='/delete?id={{emp.id}}'>Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

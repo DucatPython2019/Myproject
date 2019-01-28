@@ -1,0 +1,12 @@
+<html>
+<body>
+{{msg}}
+<form action='/register_db/' method='post'>
+{%csrf_token%}
+Name:<input type='text' name='name'><br><br>
+Sal:<input type='number' name='sal'><br><br>
+Email:<input type='email' name='email'><br><br>
+<input type='submit' value='register'>
+</form>
+</body>
+</html>
